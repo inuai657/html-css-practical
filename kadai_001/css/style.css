@@ -1,0 +1,144 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+
+/* 見出し */
+h2 {
+  margin-bottom: 60px;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* 文章 */
+p, ul {
+  font-size: 18px;
+}
+
+
+/* Google Fontsの指定 */
+.noto-sans-jp-normal {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+span{
+  border: solid 0.5px #000000;
+  padding: 0 15px;
+}
+
+#nav-pc ul {
+  display: flex;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  font-size: 5vmin;
+}
+
+#nav-pc li {
+  list-style: none;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc a {
+  text-decoration: none;
+  margin: 20px;
+  color: #000000;
+}
+
+#nav-pc a:hover {
+  text-decoration: underline;
+}
+
+/* メインビジュアル */
+#main-visual {
+  position: relative;
+  height: auto;
+}
+
+#main-visual > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* メインビジュアル以外 */
+#except-main-visual {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* About */
+#about {
+  margin: 80px auto;
+}
+
+#about-photo {
+  border-radius: 50%;
+}
+
+/* Works */
+.works-explain{
+  padding: 0 20px 0 0;
+  width :calc(100%/3);
+}
+
+/* フッター */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#copyright {
+  color: #000000;
+  margin: 0;
+}
+
+/* ===========
+スマホのスタイル
+============== */
+/* 画像幅が767px以下のとき */
+@media screen and (max-width:767px) {
+  .flex {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* About */
+  #about-photo {
+    width: 100%;
+  }
+
+  /* Works */
+  .works-photo {
+    width: 100%;
+  }
+  .works-explain {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+}
