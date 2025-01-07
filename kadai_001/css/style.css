@@ -22,11 +22,12 @@ p, ul {
 
 
 /* Google Fontsの指定 */
-.noto-sans-jp-normal {
-  font-family: "Noto Sans JP", serif;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
 }
 
 body {
