@@ -1,3 +1,4 @@
+/* 犬塚のCSS */
 /* PC、スマホ共通スタイル */
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@ h2 {
   font-size: 34px;
   text-align: center;
   width: 100%;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -39,39 +41,49 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-/* ナビゲーションのレイアウト */
-#nav-pc {
-  font-size: 34px;
-  font-weight: bold;
-}
-
-span{
-  border: solid 0.5px #000000;
-  padding: 0 15px;
-}
-
-#nav-pc ul {
+/* ヘッダー */
+.header-inner {
   display: flex;
-  justify-content: space-evenly;
-  white-space: nowrap;
-  font-size: 5vmin;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
-#nav-pc li {
+.header-inner a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* MyProfileの見出し部分 */
+h1 {
+  margin: 0 0 0 20px;
+  font-size: 34px;
+  border: 1px solid black;
+  padding: 0px 20px;
+}
+
+.home {
+  text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+nav .menu {
+  display: flex;
+  padding-left: 0;
+}
+
+nav li {
+  margin: 0 20px;
   list-style: none;
 }
 
-/* ナビゲーションのリンクの装飾設定 */
-#nav-pc a {
-  text-decoration: none;
-  margin: 20px;
-  color: #000000;
+nav a {
+  font-size: 34px;
 }
 
-#nav-pc a:hover {
-  text-decoration: underline;
-}
 
 /* メインビジュアル */
 #main-visual {
